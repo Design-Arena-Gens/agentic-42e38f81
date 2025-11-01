@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agar.io Clone</title>
+  <meta name="description" content="A lightweight agar.io-style clone implemented in vanilla JS and Canvas." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2355c' /><text x='50' y='60' text-anchor='middle' font-size='60' fill='white'>A</text></svg>">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div class="overlay top-left">
+    <div class="brand">agar-lite</div>
+    <div class="hud">
+      <div><strong>Mass:</strong> <span id="hud-mass">0</span></div>
+      <div><strong>Cells:</strong> <span id="hud-cells">1</span></div>
+      <div><strong>FPS:</strong> <span id="hud-fps">0</span></div>
+    </div>
+  </div>
+
+  <div class="overlay top-right">
+    <div class="panel">
+      <div class="panel-title">Leaderboard</div>
+      <ol id="leaderboard" class="leaderboard"></ol>
+    </div>
+  </div>
+
+  <div class="overlay bottom-left">
+    <div class="panel small">
+      <div><strong>Controls</strong></div>
+      <div>Mouse: Move</div>
+      <div>Space: Split</div>
+      <div>W: Eject mass</div>
+      <div>R: Respawn</div>
+      <div>P: Pause</div>
+    </div>
+  </div>
+
+  <div id="menu" class="menu">
+    <div class="menu-card">
+      <div class="brand large">agar-lite</div>
+      <input id="nickname" class="input" placeholder="Nickname" maxlength="15" />
+      <button id="play" class="button">Play</button>
+      <div class="hint">No server required. Local bots included.</div>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+</html>

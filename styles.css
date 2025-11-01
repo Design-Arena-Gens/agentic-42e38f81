@@ -1,0 +1,23 @@
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#0f1224;color:#e9ecff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+canvas#game{position:fixed;inset:0;display:block}
+.overlay{position:fixed;z-index:10;color:#dfe4ff}
+.top-left{top:16px;left:16px}
+.top-right{top:16px;right:16px}
+.bottom-left{left:16px;bottom:16px}
+.brand{font-weight:800;letter-spacing:0.5px;color:#b7c4ff}
+.brand.large{font-size:40px;margin-bottom:12px}
+.hud{margin-top:8px;display:grid;gap:4px;background:rgba(20,24,48,.5);border:1px solid rgba(169,181,255,.2);backdrop-filter:blur(6px);padding:10px 12px;border-radius:10px}
+.panel{background:rgba(20,24,48,.6);border:1px solid rgba(169,181,255,.25);backdrop-filter:blur(8px);padding:12px;border-radius:12px;min-width:220px}
+.panel.small{min-width:auto}
+.panel-title{font-weight:700;margin-bottom:8px;color:#c6d2ff}
+.leaderboard{margin:0;padding-left:18px;display:grid;gap:4px}
+.menu{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(1200px 800px at 50% -10%, rgba(120,140,255,.25), rgba(15,18,36,0.9) 60%), radial-gradient(900px 600px at -10% 110%, rgba(80,180,255,.18), rgba(15,18,36,0.9) 55%), #0f1224;z-index:20}
+.menu.hidden{display:none}
+.menu-card{width:360px;max-width:90vw;background:rgba(20,24,48,.65);border:1px solid rgba(169,181,255,.25);backdrop-filter:blur(10px);padding:20px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(169,181,255,.35);background:rgba(255,255,255,.05);color:#e9ecff;outline:none}
+.input:focus{border-color:#9ab0ff}
+.button{margin-top:12px;width:100%;padding:12px 14px;border-radius:10px;border:0;background:linear-gradient(135deg,#6e8bff,#5ed0ff);color:#0f1224;font-weight:800;cursor:pointer}
+.button:hover{filter:brightness(1.05)}
+.hint{opacity:.75;margin-top:10px;font-size:12px}
+/* Canvas styling aids */
+.shadow-strong{filter:drop-shadow(0 10px 30px rgba(0,0,0,.45))}
